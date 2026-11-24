@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HACKFEST 2.0 | Problem Statements</title>
+
+  <link rel="stylesheet" href="problem-statements.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="background-image"></div>
+  <div class="background-overlay"></div>
+
+  <!-- Animated particles -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <!-- TOP NAVBAR -->
+<nav class="sci-fi-nav">
+    <a href="#" class="nav-brand">EUREKA</a>
+
+    <div class="nav-links">
+        <a href="#home">OVERVIEW</a>
+        <a href="#">SCHEDULE</a>
+        <a href="#">ORGANIZERS</a>
+        <a href="#">PASSES & PERKS</a>
+    </div>
+
+    <a href="#" class="cyber-btn">REGISTER</a>
+</nav>
+
+<!-- LEFT SIDEBAR -->
+<aside class="side-panel left-panel">
+
+    <a href="#" class="side-link">
+        <i data-lucide="house"></i>
+        <span>HOME</span>
+    </a>
+
+    <a href="#" class="side-link">
+        <i data-lucide="trophy"></i>
+        <span>LEADERBOARD</span>
+    </a>
+
+    <a href="problem-statements.html"
+       class="side-link active" aria-current="page">
+        <i data-lucide="file-code"></i>
+        <span>PS</span>
+    </a>
+
+    <a href="#" class="side-link">
+        <i data-lucide="info"></i>
+        <span>INFO</span>
+    </a>
+
+    <a href="#" class="side-link">
+        <i data-lucide="phone"></i>
+        <span>CONTACT</span>
+    </a>
+
+</aside>
+
+<!-- RIGHT SIDEBAR -->
+<aside class="side-panel right-panel">
+
+    <a href="#" class="side-link" aria-label="camera">
+        <i data-lucide="camera"></i>
+    </a>
+
+    <a href="#" class="side-link" aria-label="briefcase-business">
+        <i data-lucide="briefcase-business"></i>
+    </a>
+
+    <a href="#" class="side-link" aria-label="code">
+        <i data-lucide="code"></i>
+    </a>
+
+    <a href="#" class="side-link" aria-label="Email">
+        <i data-lucide="mail"></i>
+    </a>
+
+</aside>
+
+
+  <!-- HERO SECTION -->
+  <main>
+
+    <section class="hero-section" id="home">
+
+      <div class="hero-content">
+
+        <div class="cyber-badge">
+          THE EUREKA CLUB PRESENTS
+        </div>
+
+        <h1 class="hero-title">
+          HACKFEST <span>2.0</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          THINK. INNOVATE. BUILD THE FUTURE.
+        </p>
+
+        <div class="hero-description">
+          Every great innovation begins with a problem.
+          Choose your challenge or bring your own idea.
+        </div>
+
+        <!-- TRACK BUTTONS -->
+        <div class="track-selector">
+
+          <a href="#track-a" class="track-button track-a-button">
+            <span class="track-number">01 // OFFICIAL</span>
+            <strong>TRACK A</strong>
+            <span class="track-description">
+              Explore Our Problem Statements
+            </span>
+            <i data-lucide="arrow-down-right"></i>
+          </a>
+
+          <a href="#track-b" class="track-button track-b-button">
+            <span class="track-number">02 // OPEN INNOVATION</span>
+            <strong>TRACK B</strong>
+            <span class="track-description">
+              Bring Your Own Problem Statement
+            </span>
+            <i data-lucide="arrow-down-right"></i>
+          </a>
+
+        </div>
+
+        <div class="scroll-indicator">
+          <span>SCROLL TO EXPLORE</span>
+          <div class="scroll-line"></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TRACK A SECTION -->
+    <section class="content-section" id="track-a">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="cyber-badge">
+            TRACK A // OFFICIAL CHALLENGES
+          </div>
+
+          <h2 class="section-title">
+            PROBLEM <span>STATEMENTS</span>
+          </h2>
+
+          <p class="section-motto">
+            Choose a challenge. Create something extraordinary.
+          </p>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+        <div class="search-container">
+          <i data-lucide="search"></i>
+          <input
+            type="text"
+            id="problem-search"
+            placeholder="Search problem statements..."
+          >
+        </div>
+
+
+        <!-- FILTER BUTTONS -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">
+            ALL
+          </button>
+
+          <button class="filter-btn" data-filter="ai">
+            AI / ML
+          </button>
+
+          <button class="filter-btn" data-filter="web">
+            WEB DEVELOPMENT
+          </button>
+
+          <button class="filter-btn" data-filter="other">
+            OTHER
+          </button>
+        </div>
+
+
+        <!-- PROBLEM STATEMENT CARDS -->
+        <div class="problem-grid" id="problem-grid">
+
+          <!-- Replace these sample cards with official problem statements -->
+
+          <article class="problem-card" data-category="ai">
+
+            <div class="problem-card-top">
+              <span class="problem-id">PS // 001</span>
+              <i data-lucide="brain-circuit"></i>
+            </div>
+
+            <span class="problem-domain">AI / ML</span>
+
+            <h3>Problem Statement 01</h3>
+
+            <p>
+              Official problem statement details will be published here.
+              Participants can explore the challenge and develop an innovative solution.
+            </p>
+
+            <div class="problem-card-footer">
+              <span>TRACK A</span>
+              <button class="details-btn" type="button">
+                VIEW DETAILS <i data-lucide="arrow-up-right"></i>
+              </button>
+            </div>
+
+          </article>
+
+
+          <article class="problem-card" data-category="web">
+
+            <div class="problem-card-top">
+              <span class="problem-id">PS // 002</span>
+              <i data-lucide="code-2"></i>
+            </div>
+
+            <span class="problem-domain">WEB DEVELOPMENT</span>
+
+            <h3>Problem Statement 02</h3>
+
+            <p>
+              Official problem statement details will be published here.
+              Build a solution that addresses the given challenge.
+            </p>
+
+            <div class="problem-card-footer">
+              <span>TRACK A</span>
+              <button class="details-btn" type="button">
+                VIEW DETAILS <i data-lucide="arrow-up-right"></i>
+              </button>
+            </div>
+
+          </article>
+
+
+          <article class="problem-card" data-category="other">
+
+            <div class="problem-card-top">
+              <span class="problem-id">PS // 003</span>
+              <i data-lucide="lightbulb"></i>
+            </div>
+
+            <span class="problem-domain">OPEN TECHNOLOGY</span>
+
+            <h3>Problem Statement 03</h3>
+
+            <p>
+              Official problem statement details will be published here.
+              Turn your technical knowledge into a practical solution.
+            </p>
+
+            <div class="problem-card-footer">
+              <span>TRACK A</span>
+              <button class="details-btn" type="button">
+                VIEW DETAILS <i data-lucide="arrow-up-right"></i>
+              </button>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- TRACK B SECTION -->
+    <section class="content-section track-b-section" id="track-b">
+
+      <div class="container">
+
+        <div class="track-b-content">
+
+          <div class="cyber-badge">
+            TRACK B // OPEN INNOVATION
+          </div>
+
+          <h2 class="section-title">
+            YOUR IDEA.<br>
+            <span>YOUR CHALLENGE.</span>
+          </h2>
+
+          <p class="track-b-description">
+            Have a real-world problem that deserves a solution?
+            You don't have to choose from our official problem statements.
+            Bring your own problem statement and turn your idea into reality.
+          </p>
+
+          <div class="track-b-features">
+
+            <div class="feature-item">
+              <i data-lucide="lightbulb"></i>
+              <span>Bring Your Own Idea</span>
+            </div>
+
+            <div class="feature-item">
+              <i data-lucide="code"></i>
+              <span>Build Your Own Solution</span>
+            </div>
+
+            <div class="feature-item">
+              <i data-lucide="rocket"></i>
+              <span>Innovate Without Limits</span>
+            </div>
+
+          </div>
+
+          <div class="track-b-note">
+            <i data-lucide="info"></i>
+            <p>
+              Participants choosing Track B can work on their own
+              problem statement, subject to event guidelines.
+            </p>
+          </div>
+
+          <a href="#home" class="cyber-btn back-to-top">
+            BACK TO TOP <i data-lucide="arrow-up"></i>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="cyber-footer">
+    <div class="footer-glitch">END OF LINE_</div>
+    <p>© 2026 EUREKA CLUB // VIT BHOPAL</p>
+    <p>HACKFEST 2.0 — THINK BEYOND ORDINARY</p>
+    <p class="powered-by">
+    POWERED BY <span>PARTH GAUR</span>
+</p>
+  </footer>
+
+
+  <script src="problem-statements.js"></script>
+
+</body>
+</html>
